@@ -1,0 +1,24 @@
+name: cloudrun-srv
+runtime: cloudrun
+spec:
+  base_name: hello-app
+  http:
+    public: true
+    http2: false
+depends_on:
+  cloudsql: 
+  - name: my-pg-db
+    type: postgres
+  pubsub:
+    consume:
+    - name: the_topic
+    produce:
+    - name: the_topic
+  cloudstorage:
+  - name: baz
+    public: true
+    access: readwrite
+env:
+  vars:
+    foo: bar
+
