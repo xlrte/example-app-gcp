@@ -18,7 +18,7 @@ The `xlrte` config lives in `.xlrte/config` and contains a single service in the
 #### Build the example service and push it
 
 - Run `gcloud config set project my-cool-dev-env` (change the project as necessaru)
-- Run ` gcloud auth configure-docker` so that you can push images.
+- Run `gcloud auth configure-docker` so that you can push images.
 - Run `docker build . -t gcr.io/my-cool-dev-env/hello-app:v1` (change the project as necessary)
 - Run `docker push gcr.io/my-cool-dev-env/hello-app:v1` (change the project as necessary)
 
