@@ -24,7 +24,7 @@ The `xlrte` config lives in `.xlrte/config` and contains a single service in the
 
 #### Deploy with xlrte
 
-- Initialize the environment, let's call it dev, with `xlrte -e dev -p gcp -c my-cool-dev-env -r europe-west6`
+- Initialize the environment, let's call it dev, with `xlrte init -e dev -p gcp -c my-cool-dev-env -r europe-west6`
 - Run `xlrte apply -e dev` to create and deploy the environment.
 
 **Warning! Initial CloudSQL setup takes a long time!**
